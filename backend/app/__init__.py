@@ -8,7 +8,7 @@ from sqlalchemy import inspect, text
 from .extensions import db
 
 load_dotenv()
-socketio = SocketIO(cors_allowed_origins="*", async_mode="eventlet")
+socketio = SocketIO(cors_allowed_origins="*", async_mode="threading")
 jwt = JWTManager()
 
 
