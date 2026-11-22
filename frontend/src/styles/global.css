@@ -986,3 +986,20 @@ h3 {
     transition: none;
   }
 }
+
+/* Custom Leaflet markers - Safe locations and user location */
+
+.safe-location-marker,
+.user-location-marker {
+  background: transparent;
+  border: none;
+}
+
+.safe-location-marker span,
+.user-location-marker span {
+  display: block;
+  font-size: 27px;
+  line-height: 36px;
+  text-align: center;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+}
